@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TcVpxEnc", "TcVpxEnc\TcVpxEnc.vcxproj", "{C383EA29-0878-43D2-B9FF-589750B86824}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0} = {BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "h264encoder", "..\h264encoder\h264encoder\h264encoder.vcxproj", "{BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "H264EncTest", "H264EncTest\H264EncTest.vcxproj", "{9D9A2A1A-C9DD-407A-92E3-C5133022550E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0} = {BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C383EA29-0878-43D2-B9FF-589750B86824}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C383EA29-0878-43D2-B9FF-589750B86824}.Debug|Win32.Build.0 = Debug|Win32
+		{C383EA29-0878-43D2-B9FF-589750B86824}.Release|Win32.ActiveCfg = Release|Win32
+		{C383EA29-0878-43D2-B9FF-589750B86824}.Release|Win32.Build.0 = Release|Win32
+		{BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0}.Debug|Win32.Build.0 = Debug|Win32
+		{BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0}.Release|Win32.ActiveCfg = Release|Win32
+		{BFF3B6D7-4580-4935-8E97-AE6FE3BBFDE0}.Release|Win32.Build.0 = Release|Win32
+		{9D9A2A1A-C9DD-407A-92E3-C5133022550E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D9A2A1A-C9DD-407A-92E3-C5133022550E}.Debug|Win32.Build.0 = Debug|Win32
+		{9D9A2A1A-C9DD-407A-92E3-C5133022550E}.Release|Win32.ActiveCfg = Release|Win32
+		{9D9A2A1A-C9DD-407A-92E3-C5133022550E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

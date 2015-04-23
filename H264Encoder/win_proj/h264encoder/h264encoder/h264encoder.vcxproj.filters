@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{06591037-edee-44d4-9ad4-f8477147fb21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\x86">
+      <UniqueIdentifier>{30d67f9b-a60a-4802-a610-df06e32a53c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encoder">
+      <UniqueIdentifier>{c1c5877f-281d-4910-99ed-4aa43f1e1150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra">
+      <UniqueIdentifier>{a98aeddc-a728-42d9-94da-ec0c2012da7a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\h264encoder\common\x86\dct.h">
+      <Filter>common\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\x86\mc.h">
+      <Filter>common\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\x86\pixel.h">
+      <Filter>common\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\x86\predict.h">
+      <Filter>common\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\x86\quant.h">
+      <Filter>common\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\x86\util.h">
+      <Filter>common\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\bitstream.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\cabac.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\cpu.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\dct.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\frame.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\macroblock.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\mc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\osdep.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\pixel.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\predict.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\quant.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\rectangle.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\set.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\threadpool.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\common\win32thread.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\encoder\analyse.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\encoder\macroblock.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\encoder\me.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\encoder\ratecontrol.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\encoder\set.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\config.h">
+      <Filter>extra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\x264.h">
+      <Filter>extra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\h264encoder\x264_config.h">
+      <Filter>extra</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\h264encoder\common\x86\mc-c.c">
+      <Filter>common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\x86\predict-c.c">
+      <Filter>common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\bitstream.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\cabac_com.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\cpu.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\dct.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\deblock.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\frame.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\macroblock_com.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\mc.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\mvpred.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\osdep.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\pixel.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\predict.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\quant.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\rectangle.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\set_com.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\threadpool.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\vlc.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\common\win32thread.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\analyse.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\cabac.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\cavlc.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\encoder.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\lookahead.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\macroblock.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\me.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\ratecontrol.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\h264encoder\encoder\set.c">
+      <Filter>encoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\x86inc.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\sad-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\quant-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\predict-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\pixel-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\pixel-32.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\mc-a2.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\mc-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\deblock-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\dct-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\dct-32.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\cpu-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\const-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\cabac-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\x86util.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\h264encoder\common\x86\bitstream-a.asm">
+      <Filter>common\x86</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

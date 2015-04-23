@@ -1,0 +1,5 @@
+---- ConfigParam Matches (4 in 2 files) ----
+x264Encoder.cpp (f:\work\jni\jni\h264encoder\h264enc):    ConfigParam( &st264Param );
+x264Encoder.cpp (f:\work\jni\jni\h264encoder\h264enc):    ConfigParam( &st264Param );
+x264Encoder.cpp (f:\work\jni\jni\h264encoder\h264enc):void CX264Encoder::ConfigParam(void* param)
+x264Encoder.h (f:\work\jni\jni\h264encoder\h264enc):    void ConfigParam(void*);

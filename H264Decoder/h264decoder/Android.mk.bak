@@ -1,0 +1,83 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_LDLIBS += -llog
+LOCAL_CFLAGS += -std=gnu99 -DHAVE_NEON=1
+
+LOCAL_CFLAGS += -mfpu=neon
+
+LOCAL_SRC_FILES +=      \
+ libavcodec/h264.c    \
+ libavcodec/h264_refs.c   \
+ libavcodec/options.c  \
+libavcodec/avpacket.c   \
+libavcodec/dsputil.c    \
+libavcodec/h264_cabac.c   \
+libavcodec/h264idct.c     \
+libavcodec/h264_sei.c    \
+libavcodec/h264_cavlc.c   \
+libavcodec/h264_loopfilter.c  \
+libavcodec/imgconvert.c   \
+libavcodec/bitstream.c    \
+libavcodec/error_resilience.c    \
+libavcodec/utils-av.c   \
+libavcodec/h264_direct.c  \
+libavcodec/h264pred.c      \
+libavcodec/cabac.c         \
+libavcodec/golomb.c        \
+libavcodec/h264dsp.c      \
+libavcodec/mpegvideo.c    \
+libavcodec/h264_ps.c     \
+libavutil/mathematics.c   \
+libavutil/imgutils.c      \
+libavutil/mem.c           \
+libavutil/cpu.c           \
+libavutil/log.c           \
+libavutil/pixdesc.c       \
+libavutil/utils.c         \
+decoding_encoding.c       \
+libavcodec/arm/h264dsp_init_arm.c        \
+libavcodec/arm/dsputil_init_arm.c        \
+libavcodec/arm/h264pred_init_arm.c       \
+libavcodec/arm/dsputil_init_armv6.c      \
+libavcodec/arm/dsputil_armv6.S           \
+libavcodec/arm/asm.S                       \
+libavcodec/arm/dsputil_arm.S             \
+
+
+LOCAL_CFLAGS += \
+    -DHAVE_CONFIG_H=config.
+
+# This is the target being built.
+LOCAL_MODULE:= libH264Decoder
+
+LOCAL_MODULE_CLASS := STATIC_LIBRARIES
+intermediates := $(call local-intermediates-dir)
+
+LOCAL_SRC_FILES += \
+libavcodec/arm/h264idct_neon.S           \
+libavcodec/arm/h264dsp_neon.S            \
+libavcodec/arm/neon.S                    \
+libavcodec/arm/h264pred_neon.S           \
+libavcodec/arm/dsputil_neon.S      \
+libavcodec/arm/dsputil_init_neon.c       \
+libavcodec/arm/h264cmc_neon.S
+
+
+LOCAL_C_INCLUDES += \
+    $(JNI_H_INCLUDE)\
+    $(LOCAL_PATH)/                                  \
+    $(LOCAL_PATH)/libavcodec                            \
+    $(LOCAL_PATH)/libavutil                           \
+    
+# No specia compiler flags.
+LOCAL_CFLAGS +=
+
+# Link libs (ex logs)
+LOCAL_LDLIBS := -llog
+
+# Don't prelink this library.  For more efficient code, you may want
+# to add this library to the prelink map and set this to true.
+LOCAL_PRELINK_MODULE := false
+
+include $(BUILD_STATIC_LIBRARY) 
+#include $(BUILD_SHARED_LIBRARY) 

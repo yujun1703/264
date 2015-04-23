@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'x264EncLib' target in the 'x264EncLib' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+#import <TargetConditionals.h>

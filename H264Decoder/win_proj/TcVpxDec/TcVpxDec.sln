@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TcVpxDec", "TcVpxDec\TcVpxDec.vcxproj", "{F510827A-4BA7-487B-95DB-CAA659B30CBC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE} = {ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "h264decoder", "..\h264decoder\h264decoder\h264decoder.vcxproj", "{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "h264DecTest", "h264DecTest\h264DecTest.vcxproj", "{E32758CE-CE15-469A-9018-F8C8E4C1D41B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE} = {ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F510827A-4BA7-487B-95DB-CAA659B30CBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F510827A-4BA7-487B-95DB-CAA659B30CBC}.Debug|Win32.Build.0 = Debug|Win32
+		{F510827A-4BA7-487B-95DB-CAA659B30CBC}.Release|Win32.ActiveCfg = Release|Win32
+		{F510827A-4BA7-487B-95DB-CAA659B30CBC}.Release|Win32.Build.0 = Release|Win32
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}.Debug|Win32.Build.0 = Debug|Win32
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}.Release|Win32.ActiveCfg = Release|Win32
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}.Release|Win32.Build.0 = Release|Win32
+		{E32758CE-CE15-469A-9018-F8C8E4C1D41B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E32758CE-CE15-469A-9018-F8C8E4C1D41B}.Debug|Win32.Build.0 = Debug|Win32
+		{E32758CE-CE15-469A-9018-F8C8E4C1D41B}.Release|Win32.ActiveCfg = Release|Win32
+		{E32758CE-CE15-469A-9018-F8C8E4C1D41B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

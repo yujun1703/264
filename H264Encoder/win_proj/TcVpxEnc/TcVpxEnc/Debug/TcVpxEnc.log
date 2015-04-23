@@ -1,0 +1,20 @@
+﻿生成启动时间为 2014/11/18 10:57:01。
+     1>项目“F:\work\tx264\jni\H264Encoder\win_proj\TcVpxEnc\TcVpxEnc\TcVpxEnc.vcxproj”在节点 3 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\TcVpxEnc.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../../h264encoder/ /I../../../h264encoder/extras/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D CODEC_EXPORTS /D __X264__ /D __ICL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\H264Enc\H264Enc.cpp ..\..\..\H264Enc\x264Encoder.cpp
+         x264Encoder.cpp
+     1>f:\work\tx264\jni\h264encoder\h264enc\x264encoder.h(116): warning C4251: “CX264Encoder::m_stEncParam”: struct“tagx264EncParam”需要有 dll 接口由 class“CX264Encoder”的客户端使用
+                 f:\work\tx264\jni\h264encoder\h264enc\x264encoder.h(26) : 参见“tagx264EncParam”的声明
+     1>f:\work\tx264\jni\h264encoder\h264enc\x264encoder.cpp(282): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\work\tx264\jni\h264encoder\h264enc\x264encoder.cpp(306): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\work\tx264\jni\h264encoder\h264enc\x264encoder.cpp(307): warning C4305: “初始化”: 从“double”到“float”截断
+         H264Enc.cpp
+     1>f:\work\tx264\jni\h264encoder\h264enc\h264enc.h(4): fatal error C1083: 无法打开包括文件:“../../include/VCodec.h”: No such file or directory
+         正在生成代码...
+     1>已完成生成项目“F:\work\tx264\jni\H264Encoder\win_proj\TcVpxEnc\TcVpxEnc\TcVpxEnc.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.97

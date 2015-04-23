@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}</ProjectGuid>
+    <RootNamespace>h264decoder</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\..\H264Decoder\h264decoder\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\..\H264Decoder\h264decoder\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\h264decoder\decoding_encoding.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\avpacket.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\bitstream.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\cabac.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\dsputil.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\error_resilience.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\golomb.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264dsp.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264idct.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264pred.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264_cabac.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264_cavlc.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264_direct.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264_loopfilter.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264_ps.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264_refs.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\h264_sei.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\imgconvert.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\mpegvideo.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\options.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\utils-av.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\avcodec_x86_data.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\cabac_x86_h.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\dsputil_mmx.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\dsputil_mmx_1.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\dsputil_mmx_2.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\dsputil_mmx_3.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\dsputil_mmx_4.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264dsp_mmx.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_chroma_opt.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_deblock_opt.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_i386_h.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_idct_opt.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_intrapred_asm.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_intrapred_init.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_loop_filter_strength_mmx2.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_qpel_opt.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\h264_weight_asm.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavcodec\x86\qpel_opt.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavutil\cpu.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavutil\imgutils.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavutil\log.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavutil\mathematics.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavutil\mem.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavutil\pixdesc.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavutil\utils.c" />
+    <ClCompile Include="..\..\..\h264decoder\libavutil\x86\cpu_x86.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\h264decoder\commontypes.h" />
+    <ClInclude Include="..\..\..\h264decoder\config.h" />
+    <ClInclude Include="..\..\..\h264decoder\ffmpeg-h264-decoder.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\avcodec.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\bit_depth_template.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\bytestream.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\cabac.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\cabac_functions.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\dsputil.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\fft-internal.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\fft.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\fmtconvert.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\get_bits.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\golomb.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\h264.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\h264data.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\h264dsp.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\h264pred.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\h264_mvpred.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\internal_av.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\mathops.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\mpegvideo.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\rdft.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\rectangle.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\thread.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\x86\cabac_x86.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\x86\dsputil_mmx.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\x86\h264_i386.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\x86\mathops_x86.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavcodec\x86\x86_opt.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\attributes.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\avassert.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\avconfig.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\avutil.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\bswap.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\common.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\cpu.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\error.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\imgutils.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\internal_ut.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\intmath.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\intreadwrite.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\log.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\mem.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\pixdesc.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\pixfmt.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\rational.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\x86\bswap_x86.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\x86\intmath_x86.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\x86\intreadwrite.h" />
+    <ClInclude Include="..\..\..\h264decoder\libavutil\x86_cpu.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

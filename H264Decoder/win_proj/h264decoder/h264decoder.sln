@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "h264decoder", "h264decoder\h264decoder.vcxproj", "{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}.Debug|Win32.Build.0 = Debug|Win32
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}.Release|Win32.ActiveCfg = Release|Win32
+		{ABDBDAAE-84FB-48C7-BB16-18723AFC2DCE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

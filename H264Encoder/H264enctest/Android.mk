@@ -1,0 +1,33 @@
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES:= \
+	x264Encoder.cpp\
+  com_x264.cpp
+
+LOCAL_MODULE_TAGS=optional
+LOCAL_SHARED_LIBRARIES += libdl liblog
+
+
+LOCAL_STATIC_LIBRARIES := \
+        libH264Encoder    \
+
+
+LOCAL_C_INCLUDES := \
+    $(LOCAL_PATH)/   \
+    $(LOCAL_PATH)/../h264encoder  \
+
+   
+ifeq ($(TARGET_OS)-$(TARGET_SIMULATOR),linux-true)
+        LOCAL_LDLIBS += -lpthread -ldl
+endif
+
+LOCAL_LDLIBS += -L$(SYSROOT)/usr/lib -llog
+
+ifneq ($(TARGET_SIMULATOR),true)
+LOCAL_SHARED_LIBRARIES += libdl
+endif
+
+LOCAL_MODULE:= h264EncoderTest
+#include $(BUILD_EXECUTABLE)
+include $(BUILD_SHARED_LIBRARY)
