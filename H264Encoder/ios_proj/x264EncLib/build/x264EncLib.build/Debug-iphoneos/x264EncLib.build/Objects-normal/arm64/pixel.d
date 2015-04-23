@@ -11,5 +11,5 @@ dependencies: \
   ../../h264encoder/common/cpu.h ../../h264encoder/common/threadpool.h \
   ../../h264encoder/common/macroblock.h \
   ../../h264encoder/common/rectangle.h \
-  ../../h264encoder/common/arm/pixel.h \
+  ../../h264encoder/common/aarch64/pixel.h \
   ../../h264encoder/common/aarch64/predict.h

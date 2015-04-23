@@ -41,7 +41,7 @@
 #   include "sparc/pixel.h"
 #endif
 #if ARCH_AARCH64
-//#   include "aarch64/pixel.h"
+#   include "aarch64/pixel.h"
 #   include "aarch64/predict.h"
 #endif
 
@@ -1370,6 +1370,50 @@ void x264_pixel_init( int cpu, x264_pixel_function_t *pixf )
         }
     }
 #endif
+    
+#if ARCH_AARCH64
+    if( cpu&X264_CPU_NEON )
+    {
+    /*    INIT8( sad, _neon );
+        // AArch64 has no distinct instructions for aligned load/store
+        INIT8_NAME( sad_aligned, sad, _neon );
+        INIT7( sad_x3, _neon );
+        INIT7( sad_x4, _neon );
+        INIT8( ssd, _neon );
+        INIT8( satd, _neon );
+        INIT7( satd_x3, _neon );
+        INIT7( satd_x4, _neon );
+        INIT4( hadamard_ac, _neon );
+        
+        pixf->sa8d[PIXEL_8x8]   = x264_pixel_sa8d_8x8_neon;
+        pixf->sa8d[PIXEL_16x16] = x264_pixel_sa8d_16x16_neon;
+        pixf->sa8d_satd[PIXEL_16x16] = x264_pixel_sa8d_satd_16x16_neon;
+        
+        pixf->var[PIXEL_8x8]    = x264_pixel_var_8x8_neon;
+        pixf->var[PIXEL_8x16]   = x264_pixel_var_8x16_neon;
+        pixf->var[PIXEL_16x16]  = x264_pixel_var_16x16_neon;
+        pixf->var2[PIXEL_8x8]   = x264_pixel_var2_8x8_neon;
+        pixf->var2[PIXEL_8x16]  = x264_pixel_var2_8x16_neon;
+        pixf->vsad = x264_pixel_vsad_neon;
+        pixf->asd8 = x264_pixel_asd8_neon;
+        
+        pixf->intra_sad_x3_4x4    = x264_intra_sad_x3_4x4_neon;
+        pixf->intra_satd_x3_4x4   = x264_intra_satd_x3_4x4_neon;
+        pixf->intra_sad_x3_8x8    = x264_intra_sad_x3_8x8_neon;
+        pixf->intra_sa8d_x3_8x8   = x264_intra_sa8d_x3_8x8_neon;
+        pixf->intra_sad_x3_8x8c   = x264_intra_sad_x3_8x8c_neon;
+        pixf->intra_satd_x3_8x8c  = x264_intra_satd_x3_8x8c_neon;
+        pixf->intra_sad_x3_8x16c  = x264_intra_sad_x3_8x16c_neon;
+        pixf->intra_satd_x3_8x16c = x264_intra_satd_x3_8x16c_neon;
+        pixf->intra_sad_x3_16x16  = x264_intra_sad_x3_16x16_neon;
+        pixf->intra_satd_x3_16x16 = x264_intra_satd_x3_16x16_neon;
+        */
+        pixf->ssd_nv12_core     = x264_pixel_ssd_nv12_core_neon;
+        pixf->ssim_4x4x2_core   = x264_pixel_ssim_4x4x2_core_neon;
+        pixf->ssim_end4         = x264_pixel_ssim_end4_neon;
+    }
+#endif // ARCH_AARCH64
+    
 #endif // HIGH_BIT_DEPTH
 #if HAVE_ALTIVEC
     if( cpu&X264_CPU_ALTIVEC )
@@ -1383,6 +1427,8 @@ void x264_pixel_init( int cpu, x264_pixel_function_t *pixf )
     INIT4( sad_x3, _vis );
     INIT4( sad_x4, _vis );
 #endif
+    
+    
 #endif // !HIGH_BIT_DEPTH
 
     pixf->ads[PIXEL_8x16] =

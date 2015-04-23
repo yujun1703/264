@@ -34,7 +34,7 @@
 #define HAVE_ARMV6T2            0
 #define HAVE_NEON               0
 #else
-#define ARCH_ARM                1//!ENABLE_WIN32
+#define ARCH_ARM                0//!ENABLE_WIN32
 #define HAVE_ARMV6              0//!ENABLE_WIN32
 #define HAVE_ARMV6T2            0
 #define HAVE_NEON               0//!ENABLE_WIN32

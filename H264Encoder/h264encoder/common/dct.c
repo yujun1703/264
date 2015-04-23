@@ -35,7 +35,7 @@
 #if ARCH_ARM
 #   include "arm/dct.h"
 #endif
-#if 0 //ARCH_AARCH64
+#if ARCH_AARCH64
 #   include "aarch64/dct.h"
 #endif
 /* the inverse of the scaling factors introduced by 8x8 fdct */
@@ -723,13 +723,13 @@ void x264_dct_init( int cpu, x264_dct_function_t *dctf )
         dctf->sub8x8_dct8   = x264_sub8x8_dct8_neon;
         dctf->sub16x16_dct8 = x264_sub16x16_dct8_neon;
 
-        //dctf->add8x8_idct8  = x264_add8x8_idct8_neon;
-        //dctf->add16x16_idct8= x264_add16x16_idct8_neon;
+        dctf->add8x8_idct8  = x264_add8x8_idct8_neon;
+        dctf->add16x16_idct8= x264_add16x16_idct8_neon;
     }
 #endif
 
 
-#if 0 //HAVE_ARMV6 || ARCH_AARCH64
+#if 0//HAVE_ARMV6 || ARCH_AARCH64
     if( cpu&X264_CPU_NEON )
     {
         dctf->sub4x4_dct    = x264_sub4x4_dct_neon;
@@ -748,10 +748,10 @@ void x264_dct_init( int cpu, x264_dct_function_t *dctf )
         dctf->sub8x8_dct8   = x264_sub8x8_dct8_neon;
         dctf->sub16x16_dct8 = x264_sub16x16_dct8_neon;
 
-        //dctf->add8x8_idct8  = x264_add8x8_idct8_neon;
-        //dctf->add16x16_idct8= x264_add16x16_idct8_neon;
+        dctf->add8x8_idct8  = x264_add8x8_idct8_neon;
+        dctf->add16x16_idct8= x264_add16x16_idct8_neon;
 #if ARCH_AARCH64
-        //dctf->sub8x16_dct_dc= x264_sub8x16_dct_dc_neon;
+        dctf->sub8x16_dct_dc= x264_sub8x16_dct_dc_neon;
 #endif
     }
 #endif

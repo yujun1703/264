@@ -10,5 +10,5 @@ dependencies: \
   ../../h264encoder/common/cabac.h ../../h264encoder/common/quant.h \
   ../../h264encoder/common/cpu.h ../../h264encoder/common/threadpool.h \
   ../../h264encoder/common/macroblock.h \
-  ../../h264encoder/common/rectangle.h ../../h264encoder/common/arm/mc.h \
+  ../../h264encoder/common/rectangle.h \
   ../../h264encoder/common/aarch64/mc.h
